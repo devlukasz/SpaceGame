@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset=utf-8>
+		<title>My first three.js app</title>
+		<link rel="stylesheet" type="text/css" href="css/game.css">
+		<link href="https://fonts.googleapis.com/css?family=Offside" rel="stylesheet">
+</head>
+<body>
+ <background="img/concrete.JPG">
+  <div id = "hud_distance"></div>
+  <div id = "hud_shields"></div>
+  <div class = "ui_overlay" id = "intro_ui">
+        <h1>Fly it!</h1>
+		<ul>
+			<li>How far can you get before crashing your plane?</li>
+			<li>A = To move to left </li>
+			<li>D = To move to right </li>
+			<li>Good Luck!</li>
+		</ul>
+
+		<div class = "clickable_group">
+			<button class = "clickable" id = "intro_ok_button">Got It!</button>
+		</div>
+	</div>
+
+
+
+  <div class = "ui_overlay" id = "tally_ui">
+       <h1>GAMEOVER</h1>
+   <ul>
+     <li>Try again?</li>
+   </ul>
+
+   <div class = "clickable_group">
+     <button class = "clickable" id = "tally_ok_button">Got It!</button>
+   </div>
+ </div>
+
+
+
+<audio autoplay="true" loop="true" volume="0.1" src="res/mars.mp3">
+<script type="text/javascript" src="res/three.min.js"></script>
+<script type="text/javascript" src="js/game.js"></script>
+</body>
+</html>
